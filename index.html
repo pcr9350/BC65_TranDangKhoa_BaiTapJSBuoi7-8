@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BÀI TẬP TIẾT 7-8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mb-5">
+      <h3 class="text-center bg-primary my-4">BÀI TẬP TIẾT 7-8</h3>
+      <div class="row my-3">
+        <div class="form-group col-3">
+          <input
+            type="number"
+            name=""
+            id="themNumber"
+            class="form-control"
+            placeholder=""
+          />
+        </div>
+        <button id="addNumber" class="btn btn-primary col-2 mr-1">
+          Thêm số vào mảng
+        </button>
+        <button id="popNumber" class="btn btn-primary col-2">
+          Xóa số vừa thêm
+        </button>
+        <div id="arrNumber" class="bg-success col mx-3 font-weight-bold"></div>
+      </div>
+      <!-- BÀI 1 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 1: Tổng số dương</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleSum">
+            Tính tổng số dương
+          </button>
+          <div
+            id="resultSum"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 2 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 2: Đếm số dương</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleCount">
+            Đếm số dương
+          </button>
+          <div
+            id="resultCount"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 3  -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 3: Tìm số nhỏ nhứt</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleMin">
+            Số nhỏ nhứt
+          </button>
+          <div
+            id="resultMin"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 4  -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 4: Tìm số dương nhỏ nhứt</h4>
+        <div class="row m-auto">
+          <button
+            class="btn btn-primary col-3 text-center"
+            id="handleSoDuongMin"
+          >
+            Số dương nhỏ nhứt
+          </button>
+          <div
+            id="resultSoDuongMin"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 5 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 5: Tìm số chẵn cuối cùng</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleLastEven">
+            Số chẵn cuối cùng
+          </button>
+          <div
+            id="resultLastEven"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 6 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 6: Đổi vị trí</h4>
+        <div class="row">
+          <div class="form-group col-3">
+            <label for="">Nhập số vị trí 1:</label>
+            <input
+              type="number"
+              name=""
+              id="index1"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+          <div class="form-group col-3">
+            <label for="">Nhập số vị trí 2:</label>
+            <input
+              type="number"
+              name=""
+              id="index2"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+        </div>
+        <div class="row m-auto">
+          <button
+            class="btn btn-primary col-3 text-center"
+            id="handleChangePosition"
+          >
+            Đổi vị trí
+          </button>
+          <div
+            id="resultNewArray"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 7  -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 7: Sắp xếp tăng dần</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleTangDan">
+            Sắp xếp tăng dần
+          </button>
+          <div
+            id="resultTangDan"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 8 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 8: Tìm số nguyên tố đầu tiên</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleSoNguyenTo">
+            Tìm số nguyên tố đầu tiên
+          </button>
+          <div
+            id="resultSoNguyenToDauTien"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 9 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 9: Đếm số nguyên</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleCountSoNguyen">
+            Đếm số nguyên
+          </button>
+          <div
+            id="resultCountSoNguyen"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 10 -->
+      <div>
+        <h4 class="bg-warning mt-5 pl-3">BÀI 10: So sánh số lượng số âm và số dương</h4>
+        <div class="row m-auto">
+          <button class="btn btn-primary col-3 text-center" id="handleSoSanhAmDuong">
+            So sánh
+          </button>
+          <div
+            id="resultSoSanh"
+            class="bg-success col ml-2 font-weight-bold"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
